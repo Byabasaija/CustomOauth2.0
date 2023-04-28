@@ -89,7 +89,7 @@ function verifyProject() {
             var jsonData = JSON.parse(this.responseText);
             var project = jsonData;
             $('#confirm_text').text(`${project.name} wants to access your details`)
-            $('#scope').text(`Scope : ${project.scope}`)
+            $('#scope').text(`We will access your ${project.scope} profile`)
         } else if (this.readyState == 4) {
             var res = JSON.parse(this.responseText);
             $("body").empty();
