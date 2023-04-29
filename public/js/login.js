@@ -8,6 +8,7 @@ $(document).ready(function() {
             $("#div_login , #div_oauth").toggleClass("centered-form__form__hidden");
         } else {
             window.location.href = '/';
+            $("#btn-hide").addClass("hidden")
         }
     }
 
@@ -25,6 +26,7 @@ jQuery('#login-form').on('submit', function(e) {
                 $("#div_login , #div_oauth").toggleClass("centered-form__form__hidden");
             } else {
                 window.location.href = '/';
+                $("#btn-hide").addClass("hidden")
             }
         } else if (this.readyState == 4) {
             console.log(JSON.parse(this.responseText));

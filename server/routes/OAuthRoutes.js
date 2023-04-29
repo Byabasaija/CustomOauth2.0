@@ -7,7 +7,7 @@ const { verifyAccessToken, verifyAuthToken, verifyOAuthCode } = require('../midd
 const router = express.Router();
 
 const scopeMapping = {
-    full: ['_id', 'name', 'email', 'phone'],
+    full: ['_id', 'name', 'email', 'phone', 'role'],
     default: ['_id', 'name'],
     email: ['_id', 'name', 'email'],
     phone: ['_id', 'name', 'phone'],
